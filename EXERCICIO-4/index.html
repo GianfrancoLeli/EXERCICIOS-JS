@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO-4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <form id="formUsuario" class="formulario">
+        
+        <h1 class="formulario-titulo">Registro de Pessoas</h1>
+        <label>Nome
+            <input type="text" name="Nome" id="nome"  class="formulario-input" required>
+        </label>
+        
+        <label>Idade
+            <input type="number" name="Idade" id="idade"  class="formulario-input"  min="0" max="100" required>
+        </label>
+        
+       <label>Nacionalidade
+            <input type="text" name="nacionalidade" id="nacionalidade" class="formulario-input" required>    
+       </label>
+        
+        <button type="button" id="btn" class="formulario-submit" onclick="registrar()">Registrar</button>
+    </form>
+
+    <h3>Pessoas Registradas</h3>
+    <ul id="registrados">
+
+    </ul>
+    <p id="compara">
+
+    </p>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
